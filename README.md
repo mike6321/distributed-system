@@ -25,3 +25,21 @@ https://downloads.apache.org/zookeeper/stable/
 
 <img width="2559" alt="image" src="https://user-images.githubusercontent.com/33277588/196673399-aae6fde3-1d21-44d3-ab38-f8dba6adfd0f.png">
 
+# 워처와 트리거를 활용한 시스템 장애 감지
+
+### 노드 생성
+
+* ./zkCli.sh
+* create /target_znode "test new data"
+
+### 노드 데이터 변경
+
+* set /target_znode "test update data"
+
+### 자식 노드 생성
+
+* create /target_znode/children_znode "children node data"
+
+### 노드삭제
+
+*  deleteall /target_znode
