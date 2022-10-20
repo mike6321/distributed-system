@@ -43,3 +43,10 @@ https://downloads.apache.org/zookeeper/stable/
 ### 노드삭제
 
 *  deleteall /target_znode
+
+# 리더 재선출 알고리즘 구현
+
+**<img width="1920" alt="image" src="https://user-images.githubusercontent.com/33277588/196939113-dbe14d0f-68e2-4d9f-9ff1-c7eeef8b395d.png">**
+
+* 첫 번째 노드 삭제 시 두 번째 노드가 리더
+* 중간 노드 삭제 시 삭제된 뒤의 노드가 삭제된 앞의 노드와 연결
