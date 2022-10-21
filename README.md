@@ -50,3 +50,11 @@ https://downloads.apache.org/zookeeper/stable/
 
 * 첫 번째 노드 삭제 시 두 번째 노드가 리더
 * 중간 노드 삭제 시 삭제된 뒤의 노드가 삭제된 앞의 노드와 연결
+
+# Zookeeper를 이용한 클러스터 오토 힐러
+
+* java -jar [path] [numberOfWorkers] [pathToWorkerProgram]
+
+### example
+
+java -jar /Users/nhn/IdeaProjects/repository/distributed-system/autohealer/target/autohealer-1.0-SNAPSHOT-jar-with-dependencies.jar 5 /Users/nhn/IdeaProjects/repository/distributed-system/flakyworker/target/flakyworker-1.0-SNAPSHOT-jar-with-dependencies.jar
