@@ -58,3 +58,12 @@ https://downloads.apache.org/zookeeper/stable/
 ### example
 
 java -jar /Users/nhn/IdeaProjects/repository/distributed-system/autohealer/target/autohealer-1.0-SNAPSHOT-jar-with-dependencies.jar 5 /Users/nhn/IdeaProjects/repository/distributed-system/flakyworker/target/flakyworker-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+# 서비스 레지스트리 및 서비스 디스커버리 구현
+
+![image](https://user-images.githubusercontent.com/33277588/197769620-d489a7f2-6bee-4a58-967f-0ce2fe09fc48.png)
+
+![image](https://user-images.githubusercontent.com/33277588/197769700-56dee9aa-fe44-40d0-9ac3-0c96dc0956d5.png)
+
+![image](https://user-images.githubusercontent.com/33277588/197769746-64837de8-13b4-4f72-8c60-efa65531ceba.png)
+
