@@ -42,6 +42,7 @@
                     <archive>
                         <manifest>
                             <mainClass>cluster.management.Application</mainClass>
+<!--                            <mainClass>ReelectLeader</mainClass>-->
                         </manifest>
                     </archive>
                     <descriptorRefs>
