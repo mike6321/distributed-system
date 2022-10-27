@@ -12,6 +12,7 @@
         <module>autohealer</module>
         <module>flakyworker</module>
         <module>main</module>
+        <module>httpserver</module>
     </modules>
 
     <properties>
