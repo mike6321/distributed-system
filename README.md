@@ -67,3 +67,26 @@ java -jar /Users/nhn/IdeaProjects/repository/distributed-system/autohealer/targe
 
 ![image](https://user-images.githubusercontent.com/33277588/197769746-64837de8-13b4-4f72-8c60-efa65531ceba.png)
 
+# Search Alorithm
+
+## 더 중요한 단어가 더 높은 가중치를 갖는 알고리즘
+
+|                    | Articla about Cars<br />(500 words) | Long Book about Food<br />(500,000 words) |
+| ------------------ | ----------------------------------- | ----------------------------------------- |
+| **Count**          | 50                                  | 60                                        |
+| **Term Frequency** | 0.1 (10%)                           | 0.00012 (0.012%)                          |
+
+Term Frequency = (term count) / (total number of words in document)
+
+Inverse Document Frequency = log(Number of documents / Number of documents containing the term)
+
+-> <u>Term Frequency * Inverse Document Frequency</u>
+
+https://wikidocs.net/31698
+
+
+
+
+
+
+
