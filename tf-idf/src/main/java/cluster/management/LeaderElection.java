@@ -46,7 +46,7 @@ public class LeaderElection implements Watcher {
             }
         }
 
-        onElectionCallback.onWorker();
+        onElectionCallback.onWorker(); // 리더가 아닌경우
 
         System.out.println("Watching ZNode " + predecessorZNodeName);
         System.out.println();

@@ -19,6 +19,7 @@ public class Application implements Watcher {
         Application application = new Application();
         ZooKeeper zooKeeper = application.connectZookeeper();
 
+        // 워커 레지스트리, 코디네이터 레지스트리 분리
         ServiceRegistry serviceRegistry = new ServiceRegistry(zooKeeper, ServiceRegistry.WORKERS_REGISTRY_Z_NODE);
         OnElectionAction onElectionAction = new OnElectionAction(serviceRegistry, currentServerPort);
 
