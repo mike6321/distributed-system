@@ -21,7 +21,9 @@ public class Application implements Watcher {
 
         // 워커 레지스트리, 코디네이터 레지스트리 분리
         ServiceRegistry serviceRegistry = new ServiceRegistry(zooKeeper, ServiceRegistry.WORKERS_REGISTRY_Z_NODE);
-        OnElectionAction onElectionAction = new OnElectionAction(serviceRegistry, currentServerPort);
+        ServiceRegistry coordinatorServiceRegistry = new ServiceRegistry(zooKeeper, ServiceRegistry.COORDINATORS_REGISTRY_Z_NODE);
+
+        OnElectionAction onElectionAction = new OnElectionAction(serviceRegistry, coordinatorServiceRegistry, currentServerPort);
 
         LeaderElection leaderElection = new LeaderElection(zooKeeper, onElectionAction);
         leaderElection.volunteerForLeadership();
